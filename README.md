@@ -1,4 +1,4 @@
 # react
-chat-app
-client
-server
+chat-app - clone object files
+client folder
+server folder
