@@ -1,2 +1,4 @@
 chat-app/client/node_modules
 chat-app/server/node_modules
+
+react-layout/layout/node_modules
