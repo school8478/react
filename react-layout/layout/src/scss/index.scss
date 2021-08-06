@@ -1,0 +1,65 @@
+@import 'fonts.scss';
+@import 'scss-reset/_reset.scss';
+
+/* basic inset */
+$basic-color: #333;
+$border-basic-color: #ddd;
+$mr-1: 10px;
+$mr-2: 20px;
+$mr-3: 30px;
+$mr-4: 40px;
+$mr-5: 50px;
+$mr-6: 60px;
+$mr-7: 70px;
+$mr-8: 80px;
+$mr-9: 90px;
+$mr-10: 100px;
+$pd-1: 10px;
+$pd-2: 20px;
+$pd-3: 30px;
+$pd-4: 40px;
+$pd-5: 50px;
+$pd-6: 60px;
+$pd-7: 70px;
+$pd-8: 80px;
+$pd-9: 90px;
+$pd-10: 100px;
+/* basic inset */
+
+body {
+    font: {
+        family: 'Titillium Web', 'Noto Sans KR', sans-serif;
+        weight: 400;
+        size: 18px;
+    }
+}
+
+body * {
+    font: {
+        family: inherit;
+        weight: inherit;
+        size: inherit;
+    }
+    color: inherit;
+    box-sizing: border-box;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    padding: $pd-1 $pd-2;
+    font-size: 2em;
+    background-color: $basic-color;
+    z-index: 2;
+}
+.main {
+    position: relative;
+    width: 100%;
+    padding: $pd-5 $pd-2 $pd-10;
+    z-index: 0;
+}
+.footer {
+    position: relative;
+    padding: $pd-5 $pd-2;
+    z-index: 1;
+}
