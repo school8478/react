@@ -7,7 +7,7 @@ const Header = () => {
     });
     
     return (
-        <header className="header scroll">
+        <header className="header">
             <section className="sec-container full">
                 <article className="art-container">
                     <div className="dv-logo">
@@ -37,21 +37,20 @@ const Header = () => {
 
 const scroll = () => {
     const $header = document.getElementsByClassName('header')[0];
-    const $main = document.getElementsByClassName('main')[0];
-    let $headHei = $header.clientHeight;
+    const $headHei = $header.clientHeight;
 
     // 메인 컨텐츠 header 높이 변경
-    $main.style.paddingTop = $headHei + 'px';
+    $header.style.height = $headHei + 'px';
 
     if (!$header) return;
 
     window.addEventListener('scroll', (e) => {
         const $pos = window.scrollY;
 
-        if( $pos > ($main.clientHeight / 2) ) {
-            $header.classList.add("animate__animated");
+        if( $pos > $headHei ) {
+            $header.classList.add("scroll");
         } else {
-            $header.classList.remove("animate__animated");
+            $header.classList.remove("scroll");
         }
     });  
 

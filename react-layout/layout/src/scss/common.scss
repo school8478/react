@@ -1,6 +1,6 @@
 @import 'fonts.scss';
 @import 'scss-reset/_reset.scss';
-@import "animate-sass/animate";
+@import "animatewithsass/animate.scss";
 
 /* basic inset */
 $color: #000;
@@ -71,27 +71,29 @@ body * {
     box-sizing: border-box;
 }
 .header {
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
     width: 100%;
     font-size: 1em;
     color: $color;
     z-index: 2;
+    & {
+        >.sec-container {
+            position: relative;
+            @include fadeIn();
+        }
+    }
     &.scroll {
         >.sec-container {
             position: fixed;
-            top: 0;
-            left: 0;
             color: $color-reversal;
             background-color: $background-color;
+            @include bounceInDown();
         }
     }
 }
 .main {
     position: relative;
     width: 100%;
-    min-height: 100vh;
     margin: 0 auto;
     padding: $pd-6 $pd-0;
     z-index: 0;
