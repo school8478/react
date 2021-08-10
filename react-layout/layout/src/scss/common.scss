@@ -52,6 +52,46 @@ $radius: 8px;
 }
 /* basic inset */
 
+/* loading css */
+@keyframes loadSpin {
+    to { 
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes loadSpin {
+    to { 
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+.sec-loading {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    z-index: 99;
+    >article {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(8, 27, 47, .8);
+        >span {
+            position: absolute;
+            top: calc(50% - 30px);
+            left: calc(50% - 30px);
+            width: 60px;
+            height: 60px;
+            border: 4px solid rgba(218, 44, 67, .4);
+            border-radius: 50%;
+            border-top-color: #da2c43;
+            -webkit-animation: loadSpin 1s ease-in-out infinite;
+            animation: loadSpin 1s ease-in-out infinite;
+        }
+    }
+}
+
 body {
     font: {
         family: 'Titillium Web', 'Noto Sans KR', sans-serif;
@@ -94,6 +134,7 @@ body * {
 .main {
     position: relative;
     width: 100%;
+    min-height: 100vh;
     margin: 0 auto;
     padding: $pd-6 $pd-0;
     z-index: 0;
@@ -101,18 +142,8 @@ body * {
 .footer {
     position: relative;
     width: 100%;
-    min-height: 20vh;
     margin: 0 auto;
     z-index: 1;
-}
-.sec-container {
-    position: relative;
-    width: 100%;
-    max-width: $mx-wid;
-    margin: 0 auto;
-    &.full {
-        max-width: 100%;
-    }
 }
 .art-container {
     position: relative;
@@ -121,11 +152,5 @@ body * {
     margin: 0 auto;
     &.full {
         max-width: 100%;
-    }
-    >h1 {
-        height: 100vh;
-    }
-    >p {
-        height: 100vh;
     }
 }

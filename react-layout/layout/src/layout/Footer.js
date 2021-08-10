@@ -1,13 +1,11 @@
 const Footer = () => {
     return (
         <footer className="footer">
-            <section className="sec-container full">
-                <article className="art-container">
-                    
-                    Footer page
+            <article className="art-container full">
+                
+                Footer page
 
-                </article>
-            </section>
+            </article>
         </footer>
     )
 };

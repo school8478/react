@@ -1,5 +1,9 @@
 import React, { useEffect } from 'react';
 
+import LogoInfo from './components/logo';
+import SearchInfo from './components/search';
+import NavInfo from './components/nav';
+
 const Header = () => {
     useEffect(() => {
         // if(!$eventEnd) scroll();
@@ -8,29 +12,11 @@ const Header = () => {
     
     return (
         <header className="header">
-            <section className="sec-container full">
-                <article className="art-container">
-                    <div className="dv-logo">
-                        <a href="/">
-                            <span className="spn-logo">LOGO</span>
-                            <span className="span-logo-info"></span>
-                        </a>
-                    </div>
-
-                    <div className="dv-gnb">
-                        <a href="/">Home</a>
-                        <a href="/board">Board</a>
-                        <a href="/about">About</a>
-                    </div>
-
-                    <div className="dv-total-search">
-                        <input
-                            type="text"
-                            placeholder="total search text"
-                        />
-                    </div>
-                </article>
-            </section>
+            <article className="art-container full">
+                <LogoInfo />
+                <SearchInfo />
+                <NavInfo />
+            </article>
         </header>
     )
 };
