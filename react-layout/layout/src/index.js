@@ -9,9 +9,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 
-import './scss/index.scss';
+/* layout scss */
+import './scss/common.scss';
 
-/* common */
+/* layout comprise */
 import Header from './layout/Header';
 import Footer from './layout/Footer';
 import Main from './layout/Main';

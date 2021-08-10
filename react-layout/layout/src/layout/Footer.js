@@ -1,7 +1,13 @@
 const Footer = () => {
     return (
         <footer className="footer">
-            footer
+            <section className="sec-container full">
+                <article className="art-container">
+                    
+                    Footer page
+
+                </article>
+            </section>
         </footer>
     )
 };

@@ -9,7 +9,7 @@ import About from '../pages/About';
 function Main() {
     return (
         <main className="main">
-        <Route path="/" component={Home} exact />
+        <Route exact path="/" component={Home} />
         <Route path="/board" component={Board} />
         <Route path="/about" component={About} />
         </main>
