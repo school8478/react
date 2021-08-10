@@ -7,7 +7,6 @@ import 'react-app-polyfill/stable';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
 
 /* layout scss */
 import './scss/common.scss';
@@ -22,9 +21,7 @@ import reportWebVitals from './reportWebVitals';
 ReactDOM.render(
     <React.StrictMode>
     <Header />
-    <BrowserRouter>
     <Main />
-    </BrowserRouter>
     <Footer />
     </React.StrictMode>,
     document.getElementById('layout')

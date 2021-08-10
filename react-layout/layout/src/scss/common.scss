@@ -1,5 +1,6 @@
 @import 'fonts.scss';
 @import 'scss-reset/_reset.scss';
+@import "animate-sass/animate";
 
 /* basic inset */
 $color: #000;
@@ -70,13 +71,14 @@ body * {
     box-sizing: border-box;
 }
 .header {
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     font-size: 1em;
     color: $color;
     z-index: 2;
     &.scroll {
-        height: 25px;
         >.sec-container {
             position: fixed;
             top: 0;
@@ -91,6 +93,7 @@ body * {
     width: 100%;
     min-height: 100vh;
     margin: 0 auto;
+    padding: $pd-6 $pd-0;
     z-index: 0;
 }
 .footer {
@@ -116,5 +119,11 @@ body * {
     margin: 0 auto;
     &.full {
         max-width: 100%;
+    }
+    >h1 {
+        height: 100vh;
+    }
+    >p {
+        height: 100vh;
     }
 }
