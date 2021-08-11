@@ -9,15 +9,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
 
-/* layout scss */
-import './scss/common.scss';
-
 /* layout comprise */
 import Header from './layout/Header';
 import Footer from './layout/Footer';
 import Main from './layout/Main';
 
 import reportWebVitals from './reportWebVitals';
+
+/* layout css */
+import './css/fonts.css';
+import './css/reset.css';
+import './css/common.css';
 
 ReactDOM.render(
     <React.StrictMode>

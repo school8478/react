@@ -8,11 +8,11 @@ import About from '../pages/About';
 
 const Main = () => {
     return (
-    <>
+    <section className="main">
     <Route exact path="/" component={Home} />
     <Route path="/about" component={About} />
     <Route path="/board" component={Board} />
-    </>
+    </section>
     )
 };
 
