@@ -13,6 +13,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import Header from './layout/Header';
 import Footer from './layout/Footer';
 import Main from './layout/Main';
+import LogFrm from './layout/LogFrm';
 
 import reportWebVitals from './reportWebVitals';
 
@@ -20,6 +21,7 @@ import reportWebVitals from './reportWebVitals';
 import './css/fonts.css';
 import './css/reset.css';
 import './css/common.css';
+import './css/responsive.css';
 
 ReactDOM.render(
     <React.StrictMode>
@@ -27,6 +29,7 @@ ReactDOM.render(
     <Header />
     <Main />
     <Footer />
+    <LogFrm />
     </Router>
     </React.StrictMode>,
     document.getElementById('layout')

@@ -2,16 +2,12 @@ import React from 'react';
 import { Route } from 'react-router-dom';
 
 /* pages */
-import Home from '../pages/Home';
-import Board from '../pages/Board';
-import About from '../pages/About';
+import User from '../pages/User';
 
 const Main = () => {
     return (
     <section className="main">
-    <Route exact path="/" component={Home} />
-    <Route path="/about" component={About} />
-    <Route path="/board" component={Board} />
+    <Route exact path="/" component={User} />
     </section>
     )
 };
